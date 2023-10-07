@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\Vithuz\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3525974225.index
+495830088.index
+805065408.index
+712673515.index
+43502315.index
+3750859607.index
+371709509.index
+1465127334.index

@@ -1,0 +1,43 @@
+package version01;
+import java.util.Scanner;
+
+public class Manager extends Employee {
+	String Department;
+	int ProductNo1, ProductNo2, ProductNo3;
+	Manager(String Empid, String name, String address, String Department, int ProductNo1, int ProductNo3,int ProductNo3, int ProductNo2 ){
+		super(Empid, name, address);
+		this.Department = Department;
+		this.ProductNo1 = ProductNo1;
+		this.ProductNo2 = ProductNo2; 
+		this.ProductNo3 = ProductNo3;		
+	}
+	Manager(){
+		
+	}
+	public void Read() {
+		Scanner input = new Scanner(System.in);
+		super.Read();
+		System.out.print("Enter the department id: ");
+		Department = input.nextLine();
+		
+		try {
+			System.out.print("Enter the Producr 1: ");
+			ProductNo1 = input.nextLine();
+			System.out.print("Enter the Producr 1: ");
+			ProductNo2 = input.nextLine();
+			System.out.print("Enter the Producr 1: ");
+			ProductNo3 = input.nextLine();
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+	}
+	public void Print() {
+		super.Print();
+		System.out.print("The Department is: "+Department);
+		System.out.print("The Producr 1: "+ProductNo1);
+		System.out.print("The Producr 3: "+ProductNo2);
+		System.out.print("The Producr 3: "+ProductNo3);
+	}
+	
+}
